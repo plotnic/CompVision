@@ -5,7 +5,7 @@ function [datapath] = getDataPath()
 [~,out] = system('hostname');
 
 if strcmp(out(1:4), 'ts-l')
-    datapath = '/mnt/Data/';
+    datapath = '/home/plotnikov/CompVision/';
 elseif strcmp(out(1:8),'vilem-pc')
     datapath = 'E:\Code\ImageSearchData\';
 end  %insert your computer names here using elseif (mind the trailing symbol!)
